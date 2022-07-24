@@ -1,17 +1,26 @@
 {
-  "name": "json-server-deploy",
+  "name": "tiendabuena",
   "version": "1.0.0",
-  "description": "Simple json database to deploy to the host of your choice",
-  "main": "server.js",
+  "description": "---\r <p align=\"center\" >\r      <img width=\"800\" heigth=\"400\" src=\"https://user-images.githubusercontent.com/91544872/153603780-b5e5b462-893b-471c-9b7f-7f57ad2aaff3.png\">\r </p>",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "npm run open && npm run server",
+    "open": "npx browser-sync start",
+    "server": "npx json-server --watch db.json"
   },
-  "keywords": [
-    "json-server,heroku, node, REST API"
-  ],
-  "author": "Jesper Orb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programador2022/tiendabuena.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/progrmador2022/tiendabuena/issues"
+  },
+  "homepage": "https://github.com/programador2022/tiendabuena#readme",
   "dependencies": {
+    "browser-sync": "^2.27.10",
     "json-server": "^0.17.0"
   }
 }
